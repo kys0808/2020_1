@@ -1,4 +1,4 @@
-#1번
+c#1번
 print("Hello World")
 #2번
 name = "youngsu"
