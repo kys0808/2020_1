@@ -1,5 +1,6 @@
 import java.util.*;
 
+// 1:20 - 0:49 = 31Ка
 class Solution {
 	HashMap<String,String> mp = new HashMap<>();
 	int count =0;
