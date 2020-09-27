@@ -10,6 +10,7 @@ int main(){
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cin >> n >> m;
+	// 1) 플로이드 위한 거리 초기화
 	for (int i = 1; i <= n; i++){
 		for (int j = 1; j <= n; j++){
 			dist[i][j] = 99999999;
@@ -20,7 +21,7 @@ int main(){
 		cin >> s >> e >> d;
 		dist[s][e] = min(dist[s][e],d);
 	}
-
+	// 2) dist[i][k] , dist[k][j] 가 INF가 아닐때, dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
 	for (int k = 1; k <= n; k++){
 		for (int i = 1; i <= n; i++){
 			for (int j = 1; j <= n; j++){
