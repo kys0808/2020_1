@@ -9,7 +9,7 @@ int n, m;
 vector < pair<int, int> >graph[20001];
 int dist[20001];
 // 다익스트라 (pq이용)
-// O(E*logN)	E :간선 N: 정점
+// O(E*logN)	E :간선 N: 정점 , logN 은 Heap 추출이고 각 노드마다 인접한 모든간선 확인이므로 E
 
 int main(){
 	ios::sync_with_stdio(false);
